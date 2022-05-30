@@ -18,19 +18,8 @@ const { width, height } = Dimensions.get("screen")
 
 const App = () => {
   return (
-
-  //   <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-  //   <TouchableOpacity onPress={() => { console.log('clicked'); }}>
-  //     <View style={{ flexDirection: 'row', marginTop: 15, justifyContent: 'center', alignItems: 'center', paddingVertical: 15, paddingHorizontal: 100, borderColor: '#FFCC35', borderWidth: 3, borderRadius: 50 }}>
-  //       <Icon name="shopping-cart" size={20} color={"#000000"} style={{ marginRight: 15 }} />
-  //       <Text style={{ fontSize: 16, fontWeight: 'bold', textTransform: 'uppercase' }}>Select Options</Text>
-  //     </View>
-  //   </TouchableOpacity>
-  // </View>
-
-
     <SafeAreaView style={{ flex: 1 }}>
-      <View style={{ backgroundColor: 'yellow', flex: 3 }}>
+      <View style={{ backgroundColor: 'yellow', flex: 1.6 }}>
         <View style={{ flex: 1, overflow: "hidden" }}>
           <Image source={require('./src/assets/images/1.jpg')} style={{ width, height }} resizeMode={"cover"} />
         </View>
@@ -69,6 +58,14 @@ const App = () => {
             <Icon name="star" size={20} color={"#F1B800"} style={{ padding: 1 }} />
             <Icon name="star" size={20} color={"#F1B800"} style={{ padding: 1 }} />
           </View>
+        </View>
+        <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+          <TouchableOpacity onPress={() => { console.log('clicked'); }}>
+            <View style={{ flexDirection: 'row', marginTop: 15, justifyContent: 'center', alignItems: 'center', paddingVertical: 15, paddingHorizontal: 100, borderColor: '#FFCC35', borderWidth: 3, borderRadius: 50 }}>
+              <Icon name="shopping-cart" size={20} color={"#000000"} style={{ marginRight: 15 }} />
+              <Text style={{ fontSize: 16, fontWeight: 'bold', textTransform: 'uppercase' }}>Select Options</Text>
+            </View>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>
